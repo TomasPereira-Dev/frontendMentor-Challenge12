@@ -2,11 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Calc.</title>
   </head>
-  <body>
-    <script type="module" src="/main.js"></script>
+  <body class="text-white bg-theme-1-main">
+    <div class="flex flex-col gap-6 p-8">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-2xl">calc</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <p class="text-xs">THEME</p>
+          <div class="flex gap-2 p-1 bg-theme-1-toggle-bg rounded-full">
+              <input class="appearance-none bg-transparent w-4 h-4 rounded-full checked:bg-theme-1-toggle-btn" type="radio" name="theme" value="theme-1" checked>
+              <input class="appearance-none bg-transparent w-4 h-4 rounded-full checked:bg-theme-2-toggle-btn" type="radio" name="theme" value="theme-2">
+              <input class="appearance-none bg-transparent w-4 h-4 rounded-full checked:bg-theme-3-toggle-btn" type="radio" name="theme" value="theme-3">
+          </div>
+        </div>
+      </div>
+      <input class="text-4xl text-right w-full px-8 py-4 bg-theme-1-screen rounded-lg" type="number" placeholder="0">
+      <div class="grid grid-cols-4 gap-2 p-5 bg-theme-1-screen rounded-lg">
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="7">7</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="8">8</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="9">9</button>
+        <button class="text-2xl text-center p-2 bg-theme-1-key-bg-1 border-b-4 rounded-md border-theme-1-key-shadow " type="button" data-value="delete">DEL</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="4">4</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="5">5</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="6">6</button>
+        <button class="text-2xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="+">+</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="1">1</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="2">2</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="3">3</button>
+        <button class="text-2xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="-">-</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value=".">.</button>
+        <button class="text-4xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="0">0</button>
+        <button class="text-2xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="/">/</button>
+        <button class="text-2xl text-center p-2 text-theme-1-text bg-theme-1-key-bg-2 border-b-4 rounded-md border-theme-1-key-shadow-2" type="button" data-value="*">x</button>
+        <button class="col-span-2 text-2xl text-center p-2 bg-theme-1-key-bg-1 border-b-4 rounded-md border-theme-1-key-shadow" type="button" data-value="reset">RESET</button>
+        <button class="col-span-2 text-2xl text-center p-2 bg-theme-1-toggle-btn border-b-4 rounded-md border-theme-1-key-shadow-3" type="button" data-value="=">=</button>
+      </div>
+    </div>
   </body>
+  <script type="module" src="/main.js"></script>
 </html>
