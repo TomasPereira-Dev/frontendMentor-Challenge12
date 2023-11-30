@@ -72,8 +72,7 @@ buttonContainer.addEventListener("click", (e) => {
             const secondValue = screenInput.value;
             if(previousKeyType !== "operator" && secondValue){
                 screenInput.value = calculate(firstValue, operator, secondValue);
-            }
-            
+            }   
         }
     }
 })
