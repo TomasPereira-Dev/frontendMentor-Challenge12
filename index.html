@@ -18,32 +18,32 @@
         <div class="flex items-center gap-4">
           <p class="text-xs">THEME</p>
           <div class="theme-switcher flex gap-2 p-1 bg-toggle-bg rounded-full">
-              <input class="appearance-none bg-transparent w-4 h-4 rounded-full checked:bg-toggle-btn before:relative before:content-['1'] before:text-xs before:-top-7 before:left-1" type="radio" name="theme" value="default-theme" checked>
-              <input class="appearance-none bg-transparent w-4 h-4 rounded-full checked:bg-toggle-btn before:relative before:content-['2'] before:text-xs before:-top-7 before:left-1" type="radio" name="theme" value="theme-2">
-              <input class="appearance-none bg-transparent w-4 h-4 rounded-full checked:bg-toggle-btn before:relative before:content-['3'] before:text-xs before:-top-7 before:left-1" type="radio" name="theme" value="theme-3">
+              <input class="appearance-none w-4 h-4 bg-transparent rounded-full cursor-pointer checked:bg-toggle-btn hover:brightness-150 before:relative before:content-['1'] before:text-xs before:-top-7 before:left-1" type="radio" name="theme" value="default-theme" checked>
+              <input class="appearance-none w-4 h-4 bg-transparent rounded-full cursor-pointer checked:bg-toggle-btn hover:brightness-150 before:relative before:content-['2'] before:text-xs before:-top-7 before:left-1" type="radio" name="theme" value="theme-2">
+              <input class="appearance-none w-4 h-4 bg-transparent rounded-full cursor-pointer checked:bg-toggle-btn hover:brightness-150 before:relative before:content-['3'] before:text-xs before:-top-7 before:left-1" type="radio" name="theme" value="theme-3">
           </div>
         </div>
       </div>
       <input class="screen-input text-5xl text-right theme-2:text-text-1 theme-3:text-text-1 w-full p-6 bg-screen rounded-lg" disabled>
       <div class="button-container grid grid-cols-4 gap-2 p-6 bg-screen rounded-lg md:gap-6">
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">7</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">8</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">9</button>
-        <button class="key-operator text-2xl text-center p-2 pt-4 bg-key-bg-2 border-b-4 rounded-md border-key-shadow" type="button" data-value="delete">DEL</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">4</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">5</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">6</button>
-        <button class="key-operator text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button" data-value="add">+</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">1</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">2</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">3</button>
-        <button class="key-operator text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button" data-value="substract">-</button>
-        <button class="key-operator text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button" data-value="decimal">.</button>
-        <button class="text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button">0</button>
-        <button class="key-operator text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button" data-value="divide">/</button>
-        <button class="key-operator text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2" type="button" data-value="multiply">x</button>
-        <button class="key-operator col-span-2 text-2xl text-center p-2 pt-4 bg-key-bg-2 border-b-4 rounded-md border-key-shadow" type="button" data-value="reset">RESET</button>
-        <button class="key-operator col-span-2 text-3xl text-center text-text-2 p-2 pt-4 bg-key-bg-3 border-b-4 rounded-md border-key-shadow-3" type="button" data-value="equal">=</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">7</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">8</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">9</button>
+        <button class="key-operator text-2xl text-center p-2 pt-4 bg-key-bg-2 border-b-4 rounded-md border-key-shadow cursor-pointer hover:brightness-150" type="button" data-value="delete">DEL</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">4</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">5</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">6</button>
+        <button class="key-operator text-4xl text-center p-2 pt-4 text-text-1 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button" data-value="add">+</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">1</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">2</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">3</button>
+        <button class="key-operator text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button" data-value="substract">-</button>
+        <button class="key-operator text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button" data-value="decimal">.</button>
+        <button class="text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button">0</button>
+        <button class="key-operator text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button" data-value="divide">/</button>
+        <button class="key-operator text-4xl text-center text-text-1 p-2 pt-4 bg-key-bg-1 border-b-4 rounded-md border-key-shadow-2 cursor-pointer hover:brightness-150" type="button" data-value="multiply">x</button>
+        <button class="key-operator col-span-2 text-2xl text-center p-2 pt-4 bg-key-bg-2 border-b-4 rounded-md border-key-shadow cursor-pointer hover:brightness-150" type="button" data-value="reset">RESET</button>
+        <button class="key-operator col-span-2 text-3xl text-center text-text-2 p-2 pt-4 bg-key-bg-3 border-b-4 rounded-md border-key-shadow-3 cursor-pointer hover:brightness-150" type="button" data-value="equal">=</button>
       </div>
     </div>
   </body>
