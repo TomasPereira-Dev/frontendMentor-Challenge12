@@ -24,7 +24,6 @@ buttonContainer.addEventListener("click", (e) => {
         const previousKeyType = calculator.dataset.previousKeyType;
 
         if(!action){
-            console.log(previousKeyType)
             calculator.dataset.previousKeyType = "number";
             if(!screenInput.value || previousKeyType == "operator"){
                 screenInput.value = key.textContent;
@@ -67,12 +66,14 @@ buttonContainer.addEventListener("click", (e) => {
             calculator.dataset.operator = " ";
         }
 
-        if (action === "equal"){
-            calculator.dataset.previousKeyType = "equal";
+        if (action === "equal" && calculator.dataset.firstValue !== " "){
             const operator = calculator.dataset.operator;
             const firstValue = calculator.dataset.firstValue;
             const secondValue = screenInput.value;
-            screenInput.value = calculate(firstValue, operator, secondValue); 
+            if(previousKeyType !== "operator" && secondValue){
+                screenInput.value = calculate(firstValue, operator, secondValue);
+            }
+            
         }
     }
 })
